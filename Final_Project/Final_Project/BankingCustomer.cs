@@ -8,8 +8,25 @@ namespace Final_Project
 {
     class BankingCustomer
     {
+        public string CardType { get; set; }
         public string CustomerName { get; set; }
         public int CardNumber { get; set; }
         public int SecurityCode { get; set; }
+
+        public BankingCustomer()
+        {
+            CardType = "";
+            CustomerName = "";
+            CardNumber = 0;
+            SecurityCode = 0;
+        }
+
+        public BankingCustomer(string cardType, string customerName, int cardNumber, int securityCode)
+        {
+            CardType = cardType;
+            CustomerName = customerName;
+            CardNumber = cardNumber;
+            SecurityCode = securityCode;
+        }
     }
 }
