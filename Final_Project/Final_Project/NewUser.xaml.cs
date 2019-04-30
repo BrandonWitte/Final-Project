@@ -28,9 +28,54 @@ namespace Final_Project
 
         private void BtnCreateAccount_Click(object sender, RoutedEventArgs e)
         {
-            Slot_Machine slot_Machine = new Slot_Machine();
-            slot_Machine.Show();
-            Close();
+            NewCustomer newCustomer = new NewCustomer();
+            if(txtFirstName.Text != "" && int.TryParse(txtFirstName.Text, out int firstNameResult) == false)
+            {
+                newCustomer.FirstName = txtFirstName.Text;
+                if(txtLastName.Text != "" && int.TryParse(txtLastName.Text, out int lastNameResult) == false)
+                {
+                    newCustomer.LastName = txtLastName.Text;
+                    if(int.TryParse(txtAge.Text, out int ageNumberResult))
+                    {
+                        newCustomer.Age = Convert.ToInt32(txtAge.Text);
+                        if(lstGender.SelectedItem != null)
+                        {
+                            newCustomer.Gender = lstGender.SelectedItem.ToString();
+                            if(txtEmail.Text != "" && int.TryParse(txtEmail.Text, out int emailNameResult) == false)
+                            {
+                                newCustomer.EmailAddress = txtEmail.Text;
+                            }
+                            else
+                            {
+                                MessageBox.Show("Please enter an email address.");
+                                txtEmail.Clear();
+                            }
+                        }
+                        else
+                        {
+                            MessageBox.Show("Please select a gender.");
+                        }
+                    }
+                    else
+                    {
+                        MessageBox.Show("Enter a valid age.");
+                        txtAge.Clear();
+                    }
+                }
+                else
+                {
+                    MessageBox.Show("Enter a valid last name.");
+                    txtLastName.Clear();
+                }
+            }
+            else
+            {
+                MessageBox.Show("Enter a valid first name.");
+                txtFirstName.Clear();
+            }
+            //Slot_Machine slot_Machine = new Slot_Machine();
+            //slot_Machine.Show();
+            //Close();
         }
     }
 }
