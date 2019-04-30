@@ -13,6 +13,8 @@ namespace Final_Project
         public int Age { get; set; }
         public string Gender { get; set; }
         public string EmailAddress { get; set; }
+        public string Username { get; set; }
+        public string Password { get; set; }
 
         public NewCustomer()
         {
@@ -21,15 +23,19 @@ namespace Final_Project
             Age = 0;
             Gender = "";
             EmailAddress = "";
+            Username = "";
+            Password = "";
         }
 
-        public NewCustomer(string firstname, string lastname, int age, string gender, string emailaddress)
+        public NewCustomer(string firstname, string lastname, int age, string gender, string emailaddress, string username, string password)
         {
             FirstName = firstname;
             LastName = lastname;
             Age = age;
             Gender = gender;
             EmailAddress = emailaddress;
+            Username = username;
+            Password = password;
         }
     }
 }

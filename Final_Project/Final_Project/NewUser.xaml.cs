@@ -44,7 +44,27 @@ namespace Final_Project
                             if(txtEmail.Text != "")
                             {
                                 newCustomer.EmailAddress = txtEmail.Text;
-                                
+                                if (txtUsername.Text != "")
+                                {
+                                    newCustomer.Username = txtUsername.Text;
+                                    if(txtPassword.Text != "")
+                                    {
+                                        newCustomer.Password = txtPassword.Text;
+                                        Banking banking = new Banking();
+                                        banking.Show();
+                                        Close();
+                                    }
+                                    else
+                                    {
+                                        MessageBox.Show("Please enter a valid password.");
+                                        txtPassword.Clear();
+                                    }
+                                }
+                                else
+                                {
+                                    MessageBox.Show("Please enter a valid username.");
+                                    txtUsername.Clear();
+                                }
                             }
                             else
                             {
@@ -73,9 +93,6 @@ namespace Final_Project
             {
                 MessageBox.Show("Enter a valid first name.");
                 txtFirstName.Clear();
-                //Banking banking = new Banking();
-                //banking.Show();
-                //Close();
             }
         }
 
