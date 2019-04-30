@@ -7,6 +7,15 @@
         mc:Ignorable="d"
         Title="Banking" Height="450" Width="800">
     <Grid>
-        
+        <ComboBox x:Name="comboCardType" HorizontalAlignment="Left" Margin="167,30,0,0" VerticalAlignment="Top" Width="120"/>
+        <Label Content="Card Type: " HorizontalAlignment="Left" Margin="31,30,0,0" VerticalAlignment="Top"/>
+        <Label Content="Enter Card Number: " HorizontalAlignment="Left" Margin="31,122,0,0" VerticalAlignment="Top"/>
+        <TextBox x:Name="txtCardNumber" HorizontalAlignment="Left" Height="23" Margin="187,125,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="256"/>
+        <Label Content="Enter Cardholder Name:" HorizontalAlignment="Left" Margin="31,75,0,0" VerticalAlignment="Top"/>
+        <TextBox x:Name="txtCardName" HorizontalAlignment="Left" Height="23" Margin="187,78,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="179"/>
+        <Label Content="Enter Security Code: " HorizontalAlignment="Left" Margin="31,173,0,0" VerticalAlignment="Top"/>
+        <TextBox x:Name="txtSecurityCode" HorizontalAlignment="Left" Height="23" Margin="187,173,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <Button x:Name="btnUpdateBanking" Content="Update" HorizontalAlignment="Left" Margin="31,233,0,0" VerticalAlignment="Top" Width="211" Height="52" Click="BtnUpdateBanking_Click"/>
+
     </Grid>
 </Window>

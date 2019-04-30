@@ -24,5 +24,42 @@ namespace Final_Project
         {
             InitializeComponent();
         }
+
+        private void BtnSignUp_Click(object sender, RoutedEventArgs e)
+        {
+            NewUser newUser = new NewUser();
+            newUser.Show();
+            Close();
+        }
+
+        private void BtnLogin_Click(object sender, RoutedEventArgs e)
+        {
+            if(txtUserName.Text == "username")
+            {
+                if(txtPassword.Text == "password")
+                {
+                    Slot_Machine slot_Machine = new Slot_Machine();
+                    slot_Machine.Show();
+                    Close();
+                }
+                else
+                {
+                    MessageBox.Show("Enter a valid password.");
+                    txtPassword.Clear();
+                }
+            }
+            else
+            {
+                MessageBox.Show("Enter a valid username.");
+                txtUserName.Clear();
+            }
+        }
+
+        private void Btnbanktest_Click(object sender, RoutedEventArgs e)
+        {
+            Banking banking = new Banking();
+            banking.Show();
+            Close();
+        }
     }
 }

@@ -15,23 +15,13 @@ using System.Windows.Shapes;
 namespace Final_Project
 {
     /// <summary>
-    /// Interaction logic for Banking.xaml
+    /// Interaction logic for NewUser.xaml
     /// </summary>
-    public partial class Banking : Window
+    public partial class NewUser : Window
     {
-        public Banking()
+        public NewUser()
         {
             InitializeComponent();
-            comboCardType.Items.Add("Master Card");
-            comboCardType.Items.Add("American Express");
-            comboCardType.Items.Add("Visa");
-        }
-
-        private void BtnUpdateBanking_Click(object sender, RoutedEventArgs e)
-        {
-            Slot_Machine slot_Machine = new Slot_Machine();
-            slot_Machine.Show();
-            Close();
         }
     }
 }
