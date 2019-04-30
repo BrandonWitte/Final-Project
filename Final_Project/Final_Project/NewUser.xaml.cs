@@ -22,6 +22,15 @@ namespace Final_Project
         public NewUser()
         {
             InitializeComponent();
+            lstGender.Items.Add("Male");
+            lstGender.Items.Add("Female");
+        }
+
+        private void BtnCreateAccount_Click(object sender, RoutedEventArgs e)
+        {
+            Slot_Machine slot_Machine = new Slot_Machine();
+            slot_Machine.Show();
+            Close();
         }
     }
 }

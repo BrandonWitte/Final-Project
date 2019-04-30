@@ -30,23 +30,26 @@ namespace Final_Project
         private void BtnUpdateBanking_Click(object sender, RoutedEventArgs e)
         {
             BankingCustomer bankingCustomer = new BankingCustomer();
-            comboCardType.SelectedItem = bankingCustomer.CardType;
+            bankingCustomer.CardType = comboCardType.SelectedItem.ToString();
             if(comboCardType.SelectedItem.ToString() == "Master Card")
             {
-                if(txtCardName.Text != "")
+                if (txtCardName.Text != "" && int.TryParse(txtCardName.Text, out int cardNameResult) == false)
                 {
-                    txtCardName.Text = bankingCustomer.CustomerName;
-                    if (txtCardNumber.Text.ToString().Length == 16 && txtCardNumber.Text != "")
+                    bankingCustomer.CustomerName = txtCardName.Text;
+                    if (txtCardNumber.Text.ToString().Length == 16 && int.TryParse(txtCardNumber.Text, out int cardNumberResult))
                     {
-                        txtCardNumber.Text = bankingCustomer.CardNumber.ToString();
-                        if(txtSecurityCode.Text != "")
+                        bankingCustomer.CardNumber = Convert.ToInt32(txtCardNumber.Text);
+                        if (txtSecurityCode.Text.ToString().Length == 3 && int.TryParse(txtSecurityCode.Text, out int securityCodeResult))
                         {
-                            txtSecurityCode.Text = bankingCustomer.SecurityCode.ToString();
+                            bankingCustomer.SecurityCode = Convert.ToInt32(txtSecurityCode.Text);
+                            Slot_Machine slot_Machine = new Slot_Machine();
+                            slot_Machine.Show();
+                            Close();
                         }
                         else
                         {
-                            MessageBox.Show("Please enter a valid secuirty code.");
-                            txtCardNumber.Clear();
+                            MessageBox.Show("Please enter a valid security code.");
+                            txtSecurityCode.Clear();
                         }
                     }
                     else
@@ -63,20 +66,23 @@ namespace Final_Project
             }
             else if (comboCardType.SelectedItem.ToString() == "American Express")
             {
-                if (txtCardName.Text != "")
+                if (txtCardName.Text != "" && int.TryParse(txtCardName.Text, out int cardNameResult) == false)
                 {
-                    txtCardName.Text = bankingCustomer.CustomerName;
-                    if (txtCardNumber.Text.ToString().Length == 15 && txtCardNumber.Text != "")
+                    bankingCustomer.CustomerName = txtCardName.Text;
+                    if (txtCardNumber.Text.ToString().Length == 15 && int.TryParse(txtCardNumber.Text, out int cardNumberResult))
                     {
-                        txtCardNumber.Text = bankingCustomer.CardNumber.ToString();
-                        if (txtSecurityCode.Text != "")
+                        bankingCustomer.CardNumber = Convert.ToInt32(txtCardNumber.Text);
+                        if (txtSecurityCode.Text.ToString().Length == 4 && int.TryParse(txtSecurityCode.Text, out int securityCodeResult))
                         {
-                            txtSecurityCode.Text = bankingCustomer.SecurityCode.ToString();
+                            bankingCustomer.SecurityCode = Convert.ToInt32(txtSecurityCode.Text);
+                            Slot_Machine slot_Machine = new Slot_Machine();
+                            slot_Machine.Show();
+                            Close();
                         }
                         else
                         {
-                            MessageBox.Show("Please enter a valid secuirty code.");
-                            txtCardNumber.Clear();
+                            MessageBox.Show("Please enter a valid security code.");
+                            txtSecurityCode.Clear();
                         }
                     }
                     else
@@ -93,20 +99,23 @@ namespace Final_Project
             }
             else if (comboCardType.SelectedItem.ToString() == "Visa")
             {
-                if (txtCardName.Text != "")
+                if (txtCardName.Text != "" && int.TryParse(txtCardName.Text, out int cardNameResult) == false)
                 {
-                    txtCardName.Text = bankingCustomer.CustomerName;
-                    if (txtCardNumber.Text.ToString().Length == 16 && txtCardNumber.Text != "")
+                    bankingCustomer.CustomerName = txtCardName.Text;
+                    if (int.TryParse(txtCardNumber.Text, out int cardNumberResult))
                     {
-                        txtCardNumber.Text = bankingCustomer.CardNumber.ToString();
-                        if (txtSecurityCode.Text != "")
+                        bankingCustomer.CardNumber = Convert.ToInt32(txtCardNumber.Text);
+                        if (txtSecurityCode.Text.ToString().Length == 3 && int.TryParse(txtSecurityCode.Text, out int securityCodeResult))
                         {
-                            txtSecurityCode.Text = bankingCustomer.SecurityCode.ToString();
+                            bankingCustomer.SecurityCode = Convert.ToInt32(txtSecurityCode.Text);
+                            Slot_Machine slot_Machine = new Slot_Machine();
+                            slot_Machine.Show();
+                            Close();
                         }
                         else
                         {
-                            MessageBox.Show("Please enter a valid secuirty code.");
-                            txtCardNumber.Clear();
+                            MessageBox.Show("Please enter a valid security code.");
+                            txtSecurityCode.Clear();
                         }
                     }
                     else
@@ -125,9 +134,6 @@ namespace Final_Project
             {
                 MessageBox.Show("Please select a card type.");
             }
-            Slot_Machine slot_Machine = new Slot_Machine();
-            slot_Machine.Show();
-            Close();
         }
     }
 }
