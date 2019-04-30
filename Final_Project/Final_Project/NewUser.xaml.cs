@@ -41,9 +41,10 @@ namespace Final_Project
                         if(lstGender.SelectedItem != null)
                         {
                             newCustomer.Gender = lstGender.SelectedItem.ToString();
-                            if(txtEmail.Text != "" && int.TryParse(txtEmail.Text, out int emailNameResult) == false)
+                            if(txtEmail.Text != "")
                             {
                                 newCustomer.EmailAddress = txtEmail.Text;
+                                
                             }
                             else
                             {
@@ -72,10 +73,17 @@ namespace Final_Project
             {
                 MessageBox.Show("Enter a valid first name.");
                 txtFirstName.Clear();
+                //Banking banking = new Banking();
+                //banking.Show();
+                //Close();
             }
-            //Slot_Machine slot_Machine = new Slot_Machine();
-            //slot_Machine.Show();
-            //Close();
+        }
+
+        private void BtnBack_Click(object sender, RoutedEventArgs e)
+        {
+            MainWindow mainWindow = new MainWindow();
+            mainWindow.Show();
+            Close();
         }
     }
 }
