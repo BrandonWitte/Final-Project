@@ -7,7 +7,7 @@
         mc:Ignorable="d"
         Title="Slot_Machine" Height="450" Width="800">
     <Grid>
-        <Button Content="Spin" HorizontalAlignment="Left" Margin="128,337,0,0" VerticalAlignment="Top" Width="144" Height="42"/>
+        <Button x:Name="btnSpin" Content="Spin" HorizontalAlignment="Left" Margin="128,321,0,0" VerticalAlignment="Top" Width="197" Height="58" Click="BtnSpin_Click"/>
 
     </Grid>
 </Window>

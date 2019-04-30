@@ -23,5 +23,10 @@ namespace Final_Project
         {
             InitializeComponent();
         }
+
+        private void BtnSpin_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
     }
 }
