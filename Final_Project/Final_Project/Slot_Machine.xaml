@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Final_Project"
         mc:Ignorable="d"
-        Title="Slot_Machine" Height="450" Width="800">
+        Title="Slot Machine" Height="450" Width="800">
     <Grid>
         <Grid.Background>
             <ImageBrush ImageSource="https://static.vecteezy.com/system/resources/previews/000/109/252/non_2x/free-vector-casino-royale-background.jpg"/>

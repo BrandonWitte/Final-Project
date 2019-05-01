@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Final_Project"
         mc:Ignorable="d"
-        Title="NewUser" Height="450" Width="800">
+        Title="New User" Height="450" Width="800" Background="#FFF9F6F6">
     <Grid Background="#FF7075FF">
         <Label Content="Enter First Name: " HorizontalAlignment="Left" Margin="36,94,0,0" VerticalAlignment="Top" FontWeight="Bold"/>
         <Label Content="Enter Last Name: " HorizontalAlignment="Left" Margin="36,137,0,0" VerticalAlignment="Top" FontWeight="Bold"/>
