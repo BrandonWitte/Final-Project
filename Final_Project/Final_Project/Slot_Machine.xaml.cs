@@ -19,6 +19,7 @@ namespace Final_Project
     /// </summary>
     public partial class Slot_Machine : Window
     {
+        public string different { get; set; }
         public Slot_Machine()
         {
             InitializeComponent();
@@ -45,6 +46,11 @@ namespace Final_Project
             MainWindow mainWindow = new MainWindow();
             mainWindow.Show();
             Close();
+        }
+
+        private void Window_Loaded(object sender, RoutedEventArgs e)
+        {
+            txtSlotName.Text = different;
         }
     }
 }

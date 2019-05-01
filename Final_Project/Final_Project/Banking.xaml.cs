@@ -42,8 +42,8 @@ namespace Final_Project
                         if (txtSecurityCode.Text.ToString().Length == 3 && int.TryParse(txtSecurityCode.Text, out int securityCodeResult))
                         {
                             bankingCustomer.SecurityCode = Convert.ToInt32(txtSecurityCode.Text);
-                            Slot_Machine slot_Machine = new Slot_Machine();
-                            slot_Machine.Show();
+                            NewUser newUser = new NewUser();
+                            newUser.Show();
                             Close();
                         }
                         else
@@ -140,8 +140,8 @@ namespace Final_Project
 
         private void BtnBackToNewUser_Click(object sender, RoutedEventArgs e)
         {
-            NewUser newUser = new NewUser();
-            newUser.Show();
+            MainWindow login = new MainWindow();
+            login.Show();
             Close();
         }
     }

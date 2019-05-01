@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Final_Project"
         mc:Ignorable="d"
-        Title="Slot Machine" Height="450" Width="800">
+        Title="Slot Machine" Height="450" Width="800" Loaded="Window_Loaded">
     <Grid>
         <Grid.Background>
             <ImageBrush ImageSource="https://static.vecteezy.com/system/resources/previews/000/109/252/non_2x/free-vector-casino-royale-background.jpg"/>
@@ -15,8 +15,10 @@
         <TextBox x:Name="txtnum1" HorizontalAlignment="Left" Height="23" Margin="241,179,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="66" IsEnabled="False"/>
         <TextBox x:Name="txtnum2" HorizontalAlignment="Left" Height="23" Margin="367,179,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="66" IsEnabled="False"/>
         <TextBox x:Name="txtnum3" HorizontalAlignment="Left" Height="23" Margin="484,179,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="66" IsEnabled="False"/>
-        <Label Content="Credits:" HorizontalAlignment="Left" Margin="62,55,0,0" VerticalAlignment="Top" FontWeight="Bold" FontSize="14"/>
-        <TextBox x:Name="txtCredits" HorizontalAlignment="Left" Height="23" Margin="137,61,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="87" IsEnabled="False" Text="100"/>
+        <Label Content="Credits:" HorizontalAlignment="Left" Margin="15,41,0,0" VerticalAlignment="Top" FontWeight="Bold" FontSize="14"/>
+        <TextBox x:Name="txtCredits" HorizontalAlignment="Left" Height="23" Margin="80,41,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="87" IsEnabled="False" Text="100"/>
+        <TextBox x:Name="txtSlotName" HorizontalAlignment="Left" Height="23" Margin="80,10,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" IsEnabled="False"/>
+        <Label Content="Welcome:" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top" FontWeight="Bold"/>
 
     </Grid>
 </Window>

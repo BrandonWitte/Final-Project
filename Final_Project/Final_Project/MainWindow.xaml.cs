@@ -27,8 +27,8 @@ namespace Final_Project
 
         private void BtnSignUp_Click(object sender, RoutedEventArgs e)
         {
-            NewUser newUser = new NewUser();
-            newUser.Show();
+            Banking banking = new Banking();
+            banking.Show();
             Close();
         }
 
@@ -36,9 +36,10 @@ namespace Final_Project
         {
             if(txtUserName.Text == "username")
             {
-                if(txtPassword.Text == "password")
+                if(txtPassword.Password == "password")
                 {
                     Slot_Machine slot_Machine = new Slot_Machine();
+                    slot_Machine.different = txtUserName.Text;
                     slot_Machine.Show();
                     Close();
                 }

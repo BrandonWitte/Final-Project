@@ -18,7 +18,7 @@
         <TextBox x:Name="txtCardName" HorizontalAlignment="Left" Height="23" Margin="186,101,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="179"/>
         <Label Content="Enter Security Code: " HorizontalAlignment="Left" Margin="30,196,0,0" VerticalAlignment="Top" FontWeight="Bold"/>
         <TextBox x:Name="txtSecurityCode" HorizontalAlignment="Left" Height="23" Margin="186,196,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
-        <Button x:Name="btnUpdateBanking" Content="Add Banking Info" HorizontalAlignment="Left" Margin="30,256,0,0" VerticalAlignment="Top" Width="211" Height="52" Click="BtnUpdateBanking_Click" Background="#FF080808" Foreground="#FFFCF8F8" FontWeight="Bold"/>
+        <Button x:Name="btnUpdateBanking" Content="Add User Info" HorizontalAlignment="Left" Margin="30,256,0,0" VerticalAlignment="Top" Width="211" Height="52" Click="BtnUpdateBanking_Click" Background="#FF080808" Foreground="#FFFCF8F8" FontWeight="Bold"/>
         <Button x:Name="btnBackToNewUser" Content="Back" HorizontalAlignment="Left" Margin="306,256,0,0" VerticalAlignment="Top" Width="211" Height="52" Click="BtnBackToNewUser_Click" Background="#FF080808" Foreground="#FFFCF8F8" FontWeight="Bold"/>
 
     </Grid>

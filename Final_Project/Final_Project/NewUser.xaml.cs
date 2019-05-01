@@ -50,8 +50,9 @@ namespace Final_Project
                                     if(txtPassword.Text != "")
                                     {
                                         newCustomer.Password = txtPassword.Text;
-                                        Banking banking = new Banking();
-                                        banking.Show();
+                                        Slot_Machine slot_Machine = new Slot_Machine();
+                                        slot_Machine.different = txtUsername.Text;
+                                        slot_Machine.Show();
                                         Close();
                                     }
                                     else
@@ -98,8 +99,8 @@ namespace Final_Project
 
         private void BtnBack_Click(object sender, RoutedEventArgs e)
         {
-            MainWindow mainWindow = new MainWindow();
-            mainWindow.Show();
+            Banking banking = new Banking();
+            banking.Show();
             Close();
         }
     }

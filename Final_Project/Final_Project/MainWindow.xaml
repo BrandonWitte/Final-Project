@@ -13,9 +13,9 @@
         <TextBox x:Name="txtUserName" HorizontalAlignment="Left" Height="23" Margin="407,165,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="139"/>
         <Label Content="Username: " HorizontalAlignment="Left" Margin="273,163,0,0" VerticalAlignment="Top" Width="78" FontWeight="Bold" Background="#FF0E0000" Foreground="#FFF7F4F4"/>
         <Label Content="Password: " HorizontalAlignment="Left" Margin="273,214,0,0" VerticalAlignment="Top" Width="78" FontWeight="Bold" Background="#FF0E0000" Foreground="#FFF7F4F4"/>
-        <TextBox x:Name="txtPassword" HorizontalAlignment="Left" Height="23" Margin="407,218,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="139"/>
         <Button x:Name="btnLogin" Content="Log In" HorizontalAlignment="Left" Margin="203,321,0,0" VerticalAlignment="Top" Width="122" Height="48" Click="BtnLogin_Click" Background="#FFFC0303" Foreground="#FFFEF9F9" BorderBrush="#FF080000" FontWeight="Bold"/>
         <Button x:Name="btnSignUp" Content="Sign Up" HorizontalAlignment="Left" Margin="466,321,0,0" VerticalAlignment="Top" Width="114" Height="48" Click="BtnSignUp_Click" Background="#FFFB0303" Foreground="#FFFEF9F9" BorderBrush="#FF080000" FontWeight="Bold"/>
+        <PasswordBox x:Name="txtPassword" HorizontalAlignment="Left" Margin="407,219,0,0" VerticalAlignment="Top" Width="139" RenderTransformOrigin="0.489,0.278" Height="21"/>
 
     </Grid>
 </Window>
