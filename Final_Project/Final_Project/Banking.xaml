@@ -7,16 +7,19 @@
         mc:Ignorable="d"
         Title="Banking" Height="450" Width="800">
     <Grid>
-        <ComboBox x:Name="comboCardType" HorizontalAlignment="Left" Margin="167,30,0,0" VerticalAlignment="Top" Width="120"/>
-        <Label Content="Card Type: " HorizontalAlignment="Left" Margin="31,30,0,0" VerticalAlignment="Top"/>
-        <Label Content="Enter Card Number: " HorizontalAlignment="Left" Margin="31,122,0,0" VerticalAlignment="Top"/>
-        <TextBox x:Name="txtCardNumber" HorizontalAlignment="Left" Height="23" Margin="187,125,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="256"/>
-        <Label Content="Enter Cardholder Name:" HorizontalAlignment="Left" Margin="31,75,0,0" VerticalAlignment="Top"/>
-        <TextBox x:Name="txtCardName" HorizontalAlignment="Left" Height="23" Margin="187,78,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="179"/>
-        <Label Content="Enter Security Code: " HorizontalAlignment="Left" Margin="31,173,0,0" VerticalAlignment="Top"/>
-        <TextBox x:Name="txtSecurityCode" HorizontalAlignment="Left" Height="23" Margin="187,173,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
-        <Button x:Name="btnUpdateBanking" Content="Add Banking Info" HorizontalAlignment="Left" Margin="31,233,0,0" VerticalAlignment="Top" Width="211" Height="52" Click="BtnUpdateBanking_Click"/>
-        <Button x:Name="btnBackToNewUser" Content="Back" HorizontalAlignment="Left" Margin="307,233,0,0" VerticalAlignment="Top" Width="211" Height="52" Click="BtnBackToNewUser_Click"/>
+        <Grid.Background>
+            <ImageBrush ImageSource="https://www.b2bpay.co/sites/default/files/styles/blog_listing/public/field/mainimage/b2b_pay_blockchain_banking_background_.jpg?itok=M6xHszJ-"/>
+        </Grid.Background>
+        <ComboBox x:Name="comboCardType" HorizontalAlignment="Left" Margin="166,53,0,0" VerticalAlignment="Top" Width="120"/>
+        <Label Content="Card Type: " HorizontalAlignment="Left" Margin="30,53,0,0" VerticalAlignment="Top" FontWeight="Bold"/>
+        <Label Content="Enter Card Number: " HorizontalAlignment="Left" Margin="30,145,0,0" VerticalAlignment="Top" FontWeight="Bold"/>
+        <TextBox x:Name="txtCardNumber" HorizontalAlignment="Left" Height="23" Margin="186,148,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="256"/>
+        <Label Content="Enter Cardholder Name:" HorizontalAlignment="Left" Margin="30,98,0,0" VerticalAlignment="Top" FontWeight="Bold"/>
+        <TextBox x:Name="txtCardName" HorizontalAlignment="Left" Height="23" Margin="186,101,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="179"/>
+        <Label Content="Enter Security Code: " HorizontalAlignment="Left" Margin="30,196,0,0" VerticalAlignment="Top" FontWeight="Bold"/>
+        <TextBox x:Name="txtSecurityCode" HorizontalAlignment="Left" Height="23" Margin="186,196,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <Button x:Name="btnUpdateBanking" Content="Add Banking Info" HorizontalAlignment="Left" Margin="30,256,0,0" VerticalAlignment="Top" Width="211" Height="52" Click="BtnUpdateBanking_Click" Background="#FF080808" Foreground="#FFFCF8F8" FontWeight="Bold"/>
+        <Button x:Name="btnBackToNewUser" Content="Back" HorizontalAlignment="Left" Margin="306,256,0,0" VerticalAlignment="Top" Width="211" Height="52" Click="BtnBackToNewUser_Click" Background="#FF080808" Foreground="#FFFCF8F8" FontWeight="Bold"/>
 
     </Grid>
 </Window>

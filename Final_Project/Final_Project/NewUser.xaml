@@ -6,24 +6,24 @@
         xmlns:local="clr-namespace:Final_Project"
         mc:Ignorable="d"
         Title="NewUser" Height="450" Width="800">
-    <Grid>
-        <Label Content="Enter First Name: " HorizontalAlignment="Left" Margin="36,94,0,0" VerticalAlignment="Top"/>
-        <Label Content="Enter Last Name: " HorizontalAlignment="Left" Margin="36,137,0,0" VerticalAlignment="Top"/>
-        <Label Content="Enter Age: " HorizontalAlignment="Left" Margin="36,180,0,0" VerticalAlignment="Top" Width="93"/>
-        <Label Content="Select Gender: " HorizontalAlignment="Left" Margin="36,215,0,0" VerticalAlignment="Top"/>
+    <Grid Background="#FF7075FF">
+        <Label Content="Enter First Name: " HorizontalAlignment="Left" Margin="36,94,0,0" VerticalAlignment="Top" FontWeight="Bold"/>
+        <Label Content="Enter Last Name: " HorizontalAlignment="Left" Margin="36,137,0,0" VerticalAlignment="Top" FontWeight="Bold"/>
+        <Label Content="Enter Age: " HorizontalAlignment="Left" Margin="36,180,0,0" VerticalAlignment="Top" Width="93" FontWeight="Bold"/>
+        <Label Content="Select Gender: " HorizontalAlignment="Left" Margin="36,215,0,0" VerticalAlignment="Top" FontWeight="Bold"/>
         <ComboBox x:Name="lstGender" HorizontalAlignment="Left" Margin="163,215,0,0" VerticalAlignment="Top" Width="252"/>
         <TextBox x:Name="txtFirstName" HorizontalAlignment="Left" Height="23" Margin="163,94,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="252"/>
         <TextBox x:Name="txtLastName" HorizontalAlignment="Left" Height="23" Margin="163,137,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="252"/>
         <TextBox x:Name="txtAge" HorizontalAlignment="Left" Height="23" Margin="163,180,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="252"/>
-        <Label Content="Create Account" HorizontalAlignment="Left" Margin="323,25,0,0" VerticalAlignment="Top"/>
-        <Label Content="Email Address: " HorizontalAlignment="Left" Margin="39,247,0,0" VerticalAlignment="Top"/>
+        <Label Content="Create Account" HorizontalAlignment="Left" Margin="341,25,0,0" VerticalAlignment="Top" FontWeight="Bold" FontSize="16"/>
+        <Label Content="Email Address: " HorizontalAlignment="Left" Margin="39,247,0,0" VerticalAlignment="Top" FontWeight="Bold"/>
         <TextBox x:Name="txtEmail" HorizontalAlignment="Left" Height="23" Margin="163,250,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="252"/>
-        <Button x:Name="btnCreateAccount" Content="Enter" HorizontalAlignment="Left" Margin="192,301,0,0" VerticalAlignment="Top" Width="172" Height="71" Click="BtnCreateAccount_Click"/>
-        <Button x:Name="btnBack" Content="Back" HorizontalAlignment="Left" Margin="485,301,0,0" VerticalAlignment="Top" Width="171" Height="71" Click="BtnBack_Click"/>
-        <Label Content="Username: " HorizontalAlignment="Left" Margin="485,94,0,0" VerticalAlignment="Top" Width="70"/>
+        <Button x:Name="btnCreateAccount" Content="Enter" HorizontalAlignment="Left" Margin="192,301,0,0" VerticalAlignment="Top" Width="172" Height="71" Click="BtnCreateAccount_Click" Background="#FF18E52A"/>
+        <Button x:Name="btnBack" Content="Back" HorizontalAlignment="Left" Margin="485,301,0,0" VerticalAlignment="Top" Width="171" Height="71" Click="BtnBack_Click" Background="#FF18E52A"/>
+        <Label Content="Username: " HorizontalAlignment="Left" Margin="485,94,0,0" VerticalAlignment="Top" Width="70" FontWeight="Bold"/>
         <TextBox x:Name="txtUsername" HorizontalAlignment="Left" Height="23" Margin="579,97,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
         <TextBox x:Name="txtPassword" HorizontalAlignment="Left" Height="23" Margin="579,137,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
-        <Label Content="Password:" HorizontalAlignment="Left" Margin="485,135,0,0" VerticalAlignment="Top"/>
+        <Label Content="Password:" HorizontalAlignment="Left" Margin="485,135,0,0" VerticalAlignment="Top" FontWeight="Bold"/>
 
     </Grid>
 </Window>

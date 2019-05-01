@@ -7,12 +7,15 @@
         mc:Ignorable="d"
         Title="Log In Page" Height="450" Width="800">
     <Grid>
-        <TextBox x:Name="txtUserName" HorizontalAlignment="Left" Height="23" Margin="117,68,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
-        <Label Content="Username: " HorizontalAlignment="Left" Margin="34,65,0,0" VerticalAlignment="Top" Width="78"/>
-        <Label Content="Password: " HorizontalAlignment="Left" Margin="34,115,0,0" VerticalAlignment="Top" Width="78"/>
-        <TextBox x:Name="txtPassword" HorizontalAlignment="Left" Height="23" Margin="117,118,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
-        <Button x:Name="btnLogin" Content="Log In" HorizontalAlignment="Left" Margin="34,194,0,0" VerticalAlignment="Top" Width="122" Height="48" Click="BtnLogin_Click"/>
-        <Button x:Name="btnSignUp" Content="Sign Up" HorizontalAlignment="Left" Margin="252,194,0,0" VerticalAlignment="Top" Width="114" Height="48" Click="BtnSignUp_Click"/>
+        <Grid.Background>
+            <ImageBrush ImageSource="https://cdn5.vectorstock.com/i/1000x1000/03/74/casino-city-background-vector-940374.jpg"/>
+        </Grid.Background>
+        <TextBox x:Name="txtUserName" HorizontalAlignment="Left" Height="23" Margin="407,165,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="139"/>
+        <Label Content="Username: " HorizontalAlignment="Left" Margin="273,163,0,0" VerticalAlignment="Top" Width="78" FontWeight="Bold" Background="#FF0E0000" Foreground="#FFF7F4F4"/>
+        <Label Content="Password: " HorizontalAlignment="Left" Margin="273,214,0,0" VerticalAlignment="Top" Width="78" FontWeight="Bold" Background="#FF0E0000" Foreground="#FFF7F4F4"/>
+        <TextBox x:Name="txtPassword" HorizontalAlignment="Left" Height="23" Margin="407,218,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="139"/>
+        <Button x:Name="btnLogin" Content="Log In" HorizontalAlignment="Left" Margin="203,321,0,0" VerticalAlignment="Top" Width="122" Height="48" Click="BtnLogin_Click" Background="#FFFC0303" Foreground="#FFFEF9F9" BorderBrush="#FF080000" FontWeight="Bold"/>
+        <Button x:Name="btnSignUp" Content="Sign Up" HorizontalAlignment="Left" Margin="466,321,0,0" VerticalAlignment="Top" Width="114" Height="48" Click="BtnSignUp_Click" Background="#FFFB0303" Foreground="#FFFEF9F9" BorderBrush="#FF080000" FontWeight="Bold"/>
 
     </Grid>
 </Window>
