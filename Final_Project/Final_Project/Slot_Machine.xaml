@@ -9,6 +9,11 @@
     <Grid>
         <Button x:Name="btnSpin" Content="Spin" HorizontalAlignment="Left" Margin="288,308,0,0" VerticalAlignment="Top" Width="197" Height="58" Click="BtnSpin_Click"/>
         <Button x:Name="btnLogOut" Content="Log Out" HorizontalAlignment="Left" Margin="672,10,0,0" VerticalAlignment="Top" Width="111" Height="38" Click="BtnLogOut_Click"/>
+        <TextBox x:Name="txtnum1" HorizontalAlignment="Left" Height="23" Margin="246,130,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="66" IsEnabled="False"/>
+        <TextBox x:Name="txtnum2" HorizontalAlignment="Left" Height="23" Margin="357,130,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="66" IsEnabled="False"/>
+        <TextBox x:Name="txtnum3" HorizontalAlignment="Left" Height="23" Margin="467,130,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="66" IsEnabled="False"/>
+        <Label Content="Credits:" HorizontalAlignment="Left" Margin="62,55,0,0" VerticalAlignment="Top"/>
+        <TextBox x:Name="txtCredits" HorizontalAlignment="Left" Height="23" Margin="134,58,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="87" IsEnabled="False" Text="100"/>
 
     </Grid>
 </Window>

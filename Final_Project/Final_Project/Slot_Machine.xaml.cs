@@ -26,7 +26,18 @@ namespace Final_Project
 
         private void BtnSpin_Click(object sender, RoutedEventArgs e)
         {
-
+            Random rnd = new Random();
+            int num1 = rnd.Next(1, 4);
+            int num2 = rnd.Next(1, 4);
+            int num3 = rnd.Next(1, 4);
+            txtnum1.Text = num1.ToString();
+            txtnum2.Text = num2.ToString();
+            txtnum3.Text = num3.ToString();
+            
+            if (num1 == num2 && num2 == num3)
+            {
+                txtCredits.Text = Convert.ToString((Decimal.Parse(txtCredits.Text)) + 10);
+            }
         }
 
         private void BtnLogOut_Click(object sender, RoutedEventArgs e)
