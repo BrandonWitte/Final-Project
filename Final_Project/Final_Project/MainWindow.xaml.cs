@@ -57,9 +57,7 @@ namespace Final_Project
 
         private void Btnbanktest_Click(object sender, RoutedEventArgs e)
         {
-            Banking banking = new Banking();
-            banking.Show();
-            Close();
+            
         }
     }
 }

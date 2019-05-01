@@ -10,7 +10,7 @@ namespace Final_Project
     {
         public string CardType { get; set; }
         public string CustomerName { get; set; }
-        public int CardNumber { get; set; }
+        public long CardNumber { get; set; }
         public int SecurityCode { get; set; }
 
         public BankingCustomer()
@@ -21,7 +21,7 @@ namespace Final_Project
             SecurityCode = 0;
         }
 
-        public BankingCustomer(string cardType, string customerName, int cardNumber, int securityCode)
+        public BankingCustomer(string cardType, string customerName, long cardNumber, int securityCode)
         {
             CardType = cardType;
             CustomerName = customerName;

@@ -28,5 +28,12 @@ namespace Final_Project
         {
 
         }
+
+        private void BtnLogOut_Click(object sender, RoutedEventArgs e)
+        {
+            MainWindow mainWindow = new MainWindow();
+            mainWindow.Show();
+            Close();
+        }
     }
 }

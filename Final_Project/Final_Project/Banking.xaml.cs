@@ -30,15 +30,15 @@ namespace Final_Project
         private void BtnUpdateBanking_Click(object sender, RoutedEventArgs e)
         {
             BankingCustomer bankingCustomer = new BankingCustomer();
-            bankingCustomer.CardType = comboCardType.SelectedItem.ToString();
             if(comboCardType.SelectedItem.ToString() == "Master Card")
             {
+                bankingCustomer.CardType = comboCardType.SelectedItem.ToString();
                 if (txtCardName.Text != "" && int.TryParse(txtCardName.Text, out int cardNameResult) == false)
                 {
                     bankingCustomer.CustomerName = txtCardName.Text;
-                    if (txtCardNumber.Text.ToString().Length == 16 && int.TryParse(txtCardNumber.Text, out int cardNumberResult))
+                    if (txtCardNumber.Text.Length == 16 && long.TryParse(txtCardNumber.Text, out long cardNumberResult) && txtCardNumber.Text.ToString().StartsWith("5"))
                     {
-                        bankingCustomer.CardNumber = Convert.ToInt32(txtCardNumber.Text);
+                        bankingCustomer.CardNumber = Convert.ToInt64(txtCardNumber.Text);
                         if (txtSecurityCode.Text.ToString().Length == 3 && int.TryParse(txtSecurityCode.Text, out int securityCodeResult))
                         {
                             bankingCustomer.SecurityCode = Convert.ToInt32(txtSecurityCode.Text);
@@ -66,12 +66,13 @@ namespace Final_Project
             }
             else if (comboCardType.SelectedItem.ToString() == "American Express")
             {
+                bankingCustomer.CardType = comboCardType.SelectedItem.ToString();
                 if (txtCardName.Text != "" && int.TryParse(txtCardName.Text, out int cardNameResult) == false)
                 {
                     bankingCustomer.CustomerName = txtCardName.Text;
-                    if (txtCardNumber.Text.ToString().Length == 15 && int.TryParse(txtCardNumber.Text, out int cardNumberResult))
+                    if (txtCardNumber.Text.Length == 15 && long.TryParse(txtCardNumber.Text, out long cardNumberResult) && txtCardNumber.Text.ToString().StartsWith("3"))
                     {
-                        bankingCustomer.CardNumber = Convert.ToInt32(txtCardNumber.Text);
+                        bankingCustomer.CardNumber = Convert.ToInt64(txtCardNumber.Text);
                         if (txtSecurityCode.Text.ToString().Length == 4 && int.TryParse(txtSecurityCode.Text, out int securityCodeResult))
                         {
                             bankingCustomer.SecurityCode = Convert.ToInt32(txtSecurityCode.Text);
@@ -99,12 +100,13 @@ namespace Final_Project
             }
             else if (comboCardType.SelectedItem.ToString() == "Visa")
             {
+                bankingCustomer.CardType = comboCardType.SelectedItem.ToString();
                 if (txtCardName.Text != "" && int.TryParse(txtCardName.Text, out int cardNameResult) == false)
                 {
                     bankingCustomer.CustomerName = txtCardName.Text;
-                    if (int.TryParse(txtCardNumber.Text, out int cardNumberResult))
+                    if (txtCardNumber.Text.Length == 16 && long.TryParse(txtCardNumber.Text, out long cardNumberResult) && txtCardNumber.Text.ToString().StartsWith("4"))
                     {
-                        bankingCustomer.CardNumber = Convert.ToInt32(txtCardNumber.Text);
+                        bankingCustomer.CardNumber = Convert.ToInt64(txtCardNumber.Text);
                         if (txtSecurityCode.Text.ToString().Length == 3 && int.TryParse(txtSecurityCode.Text, out int securityCodeResult))
                         {
                             bankingCustomer.SecurityCode = Convert.ToInt32(txtSecurityCode.Text);
@@ -134,6 +136,13 @@ namespace Final_Project
             {
                 MessageBox.Show("Please select a card type.");
             }
+        }
+
+        private void BtnBackToNewUser_Click(object sender, RoutedEventArgs e)
+        {
+            NewUser newUser = new NewUser();
+            newUser.Show();
+            Close();
         }
     }
 }
