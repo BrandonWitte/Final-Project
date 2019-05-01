@@ -34,10 +34,30 @@ namespace Final_Project
             txtnum1.Text = num1.ToString();
             txtnum2.Text = num2.ToString();
             txtnum3.Text = num3.ToString();
-            
-            if (num1 == num2 && num2 == num3)
+
+            if(Convert.ToInt32(txtCredits.Text) >= Convert.ToInt32(txtBet.Text))
             {
-                txtCredits.Text = Convert.ToString((Decimal.Parse(txtCredits.Text)) + 10);
+                txtCredits.Text = Convert.ToString((Decimal.Parse(txtCredits.Text)) - (Decimal.Parse(txtBet.Text)));
+                if (num1 == num2 && num2 == num3)
+                {
+                    txtCredits.Text = Convert.ToString((Decimal.Parse(txtCredits.Text)) + 15);
+                    MessageBox.Show("You won 15 credits!");
+                }
+                if(num1 == num2 || num2 == num3 || num1 == num3)
+                {
+                    txtCredits.Text = Convert.ToString((Decimal.Parse(txtCredits.Text)) + 5);
+                    MessageBox.Show("You won 5 credits!");
+                }
+                if (num1 != num2 && num2 != num3 && num1 != num3)
+                {
+                    txtCredits.Text = Convert.ToString((Decimal.Parse(txtCredits.Text)) + 0);
+                    MessageBox.Show("You won 0 credits!");
+                }
+            }
+            else
+            {
+                MessageBox.Show("Get out of my casino you have no more money!");
+                Close();
             }
         }
 
