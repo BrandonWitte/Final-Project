@@ -9,6 +9,7 @@
     <Grid>
         <Button x:Name="btnSpin" Content="Spin" HorizontalAlignment="Left" Margin="242,264,0,0" VerticalAlignment="Top" Width="197" Height="58" Click="BtnSpin_Click"/>
         <Button x:Name="btnLogOut" Content="Log Out" HorizontalAlignment="Left" Margin="672,10,0,0" VerticalAlignment="Top" Width="111" Height="38" Click="BtnLogOut_Click"/>
+        <Label Content="Label" HorizontalAlignment="Left" Margin="60,130,0,0" VerticalAlignment="Top"/>
 
     </Grid>
 </Window>

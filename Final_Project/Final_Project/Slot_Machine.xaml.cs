@@ -19,7 +19,7 @@ namespace Final_Project
     /// </summary>
     public partial class Slot_Machine : Window
     {
-        public Slot_Machine()
+        public Slot_Machine(string UserName)
         {
             InitializeComponent();
         }
