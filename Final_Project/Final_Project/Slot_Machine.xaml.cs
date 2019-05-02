@@ -40,8 +40,21 @@ namespace Final_Project
                 txtCredits.Text = Convert.ToString((Decimal.Parse(txtCredits.Text)) - (Decimal.Parse(txtBet.Text)));
                 if (num1 == num2 && num2 == num3)
                 {
-                    txtCredits.Text = Convert.ToString((Decimal.Parse(txtCredits.Text)) + 15);
-                    MessageBox.Show("You won 15 credits!");
+                    if(num1 == 1)
+                    {
+                        txtCredits.Text = Convert.ToString((Decimal.Parse(txtCredits.Text)) + 15);
+                        MessageBox.Show("You won 15 credits!");
+                    }
+                    else if(num1 == 2)
+                    {
+                        txtCredits.Text = Convert.ToString((Decimal.Parse(txtCredits.Text)) + 25);
+                        MessageBox.Show("You won 25 credits!");
+                    }
+                    else
+                    {
+                        txtCredits.Text = Convert.ToString((Decimal.Parse(txtCredits.Text)) + 50);
+                        MessageBox.Show("You won 50 credits!");
+                    }
                 }
                 if(num1 == num2 || num2 == num3 || num1 == num3)
                 {
